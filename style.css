@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "poppins-reg";
+    src: url("Poppins/Poppins-Regular.ttf");
+}
+
+html, body{
+    margin: 0;
+    background-color: aqua;
+    font-family: "poppins-reg";
+    color: black;
+    background-image: url(assets/background.jpg);
+    background-attachment: fixed;
+}
+
+.panneau-gauche{
+    background-color: rgba(255,255,255,0.5);
+    position: fixed;
+    top: 0;
+    padding: 5%;
+    height: 100%;
+}
+
+.panneau-gauche a{
+    text-decoration: none;
+    color: black;
+}
+
+.utilisateur{
+    width: 80%;
+}
+
+.image-utilisateur{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+
+
+
+
+
+
+.bloc{
+    margin: 20px auto;
+    width: 70%;
+    height: 700px;
+    background-color: rgba(255,255,255,0.5);
+}
