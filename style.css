@@ -15,7 +15,6 @@ html, body{
 }
 
 /* Début du panneau de controle de l'application */
-
 .panneau-gauche{
     background-color: rgba(255,255,255,0.1);
     position: fixed;
@@ -102,16 +101,19 @@ html, body{
 #offres-abonnements{
     background-color: rgba(0,0,0,0);
 }
-
 /* Fin du panneau de controle */
 
 
 /* Parametres */
 .ecran-parametres{
-    position:absolute;
-    margin: 10%;
-    width: 80%;
-    background-color: rgba(255,255,255,0.5);
+    position:fixed;
+    left: 15%;
+    bottom: 0;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255,255,255);
     z-index: 999;
 }
 
@@ -121,7 +123,6 @@ html, body{
 }
 
 .container-parametres{
-    margin: 5%;
     width: 100%;
     height: 100%;
     display: flex;
@@ -129,13 +130,27 @@ html, body{
     justify-content: space-between;
 }
 
-.container-parametres .bouton{
-    padding: 10px 20px;
-    border-radius: 50px;
+.container-parametres h2{
+    margin:5%;
 }
 
+.bloc-boutons-parametres{
+    margin: 0 10%;
+    width: 80%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bouton-parametres{
+    width: 80%;
+    padding: 10px 20px;
+}
+/* fin des parametres */
 
 
+/* Ecrans de controle de la page */
 .ecrans-de-controle{
     width: 100%;
     display: flex;
