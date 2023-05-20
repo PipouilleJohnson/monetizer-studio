@@ -23,6 +23,7 @@ html, body{
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -42,7 +43,7 @@ html, body{
 }
 
 .partie-haute-panneau{
-    height: 60%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -75,7 +76,7 @@ html, body{
 }
 
 .boutons-panneau{
-    height: 50%;
+    height: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -101,23 +102,38 @@ html, body{
 #offres-abonnements{
     background-color: rgba(0,0,0,0);
 }
+
+#bouton-parametres{
+    width: 80%;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+}
+
+#bouton-parametres:hover{
+    background-color: rgba(0,0,0,0.1);
+    
+}
 /* Fin du panneau de controle */
 
 
 /* Parametres */
-.ecran-parametres{
+#ecran-parametres{
     position:fixed;
     left: 15%;
-    bottom: 0;
-    width: 30%;
+    bottom: 20px;
+    width: 25%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    background-color: rgba(255,255,255);
+    background-color: rgba(255,255,255,0.5);
+    visibility: hidden;
     z-index: 999;
 }
 
-.ecran-parametres a{
+#ecran-parametres a{
     text-decoration: none;
     color: black;
 }
@@ -135,19 +151,27 @@ html, body{
 }
 
 .bloc-boutons-parametres{
-    margin: 0 10%;
+    margin: 20px 10%;
     width: 80%;
-    height: 500px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.bouton-parametres{
-    width: 80%;
+#langue, #color-mode, #infos-persos, #deconnexion{
     padding: 10px 20px;
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0);
 }
+
+#langue:hover, #color-mode:hover, #infos-persos:hover, #deconnexion:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+
 /* fin des parametres */
+
+
 
 
 /* Ecrans de controle de la page */
